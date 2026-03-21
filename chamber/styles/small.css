@@ -1,0 +1,211 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004466;
+    color: white;
+}
+
+header img {
+    height: 40px;
+}
+
+#menuButton {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #006699;
+    color: white;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+h1, h2 {
+    background: #004466;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+.about-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-me {
+    max-width: 40rem;
+}
+
+.about-image {
+    width: min(100%, 240px);
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+.hero {
+    text-align: center;
+    background: #006699;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.weather {
+    margin-top: 1rem;
+}
+
+.spotlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.spotlight {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+
+.cta {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #004466;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.business, .level {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem;
+    background: #004466;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+footer {
+    background: #004466;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.view-controls {
+    margin-bottom: 1rem;
+}
+
+.view-controls button {
+    margin-right: 0.5rem;
+}
+
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.directory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info {
+    margin-bottom: 1rem;
+}

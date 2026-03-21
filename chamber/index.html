@@ -3,89 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Imo State Chamber of Commerce - Connecting Businesses, Empowering Communities in Imo State, Nigeria">
-    <meta name="author" content="Obinna Glory Chinaza N">
-    <title>WDD 231 | Imo State Chamber of Commerce</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link href="../styles/small.css" rel="stylesheet">
-    <link href="../styles/larger.css" rel="stylesheet">
-
-    <!-- JavaScript -->
-    <script src="../scripts/navigation.js" defer></script>
-    <script src="../scripts/date.js" defer></script>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <title>Imo State Chamber of Commerce - Home</title>
+    <meta name="description" content="Imo State Chamber of Commerce: A resource hub for businesses in Imo State, providing information on local events, networking opportunities, business directories, and promoting local economic growth.">
+    <meta name="keywords" content="Imo State Chamber of Commerce, business directory, local events, networking, economic development, Nigeria">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <!-- Google Analytics placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+        gtag('config', 'GA_TRACKING_ID');
     </script>
 </head>
 <body>
     <header>
-        <!-- <img src="../images/logo.svg" alt="Site Logo"> -->
-        <span>OBINNA GLORY CHINAZA N</span>
-        <button id="menuButton">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <h1>Imo State Chamber of Commerce</h1>
+        <p id="current-date"></p>
     </header>
-
-    <nav id="navMenu">
-        <a href="../index.html">Home</a>
-        <a href="index.html">Chamber</a>
-        <a href="discover.html">Discover</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-        <a href="../final/index.html">Final</a>
-    </nav>
-
     <main>
-        <section class="hero">
-            <h1>Welcome to Imo State Chamber of Commerce</h1>
-            <p>Connecting Businesses, Empowering Communities in Imo State, Nigeria</p>
-            <div class="weather">
-                <h3>Current Weather</h3>
-                <p id="weather">Sunny, 28°C</p>
+        <section id="hero">
+            <h2>Welcome to Imo State Chamber of Commerce</h2>
+            <p>Your gateway to business success in Imo State. Discover local events, network with fellow entrepreneurs, access our business directory, and support local economic growth.</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </section>
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <p>Temperature: 28°C | Condition: Sunny | Location: Owerri, Imo State</p>
+        </section>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>The Imo State Chamber of Commerce acts as a regional economic catalyst, leadership convener, and community champion. We promote business through member services, economic and community development, and public policy that balances economic prosperity with quality of life.</p>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Members Say</h2>
+            <div class="testimonial">
+                <p>"Joining the Imo State Chamber of Commerce was one of the best decisions I've made. Their support, kindness, and dedication to helping entrepreneurs succeed are truly incredible."</p>
+                <cite>- Maria, Boutique Owner</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The Imo State Chamber has provided invaluable networking opportunities and resources that have helped grow my business tremendously."</p>
+                <cite>- Diego, Corporate Executive</cite>
+            </div>
+            <div class="testimonial">
+                <p>"As a new resident, the chamber has helped me learn about local services and connect with the business community."</p>
+                <cite>- Francisco, New Resident</cite>
             </div>
         </section>
-        <section class="community">
-            <h2>Community Information</h2>
-            <p>Imo State is located in southeastern Nigeria, known for its rich cultural heritage, oil palm production, and entrepreneurial spirit. Our chamber supports local businesses and fosters growth in this vibrant state.</p>
-            <p>Population: ~5.4 million | Area: 5,530 km² | Capital: Owerri</p>
-        </section>
-        <section class="spotlights">
-            <h2>Business Spotlights</h2>
-            <div class="spotlight">
-                <h3>Imo Tech Hub</h3>
-                <p>Innovative tech solutions for businesses in Owerri.</p>
-            </div>
-            <div class="spotlight">
-                <h3>Palm Oil Industries Ltd</h3>
-                <p>Sustainable palm oil production and processing.</p>
-            </div>
-            <div class="spotlight">
-                <h3>Imo Logistics</h3>
-                <p>Reliable transportation and supply chain services across the state.</p>
+        <section id="spotlight">
+            <h2>Member Spotlight</h2>
+            <div class="spotlight-content">
+                <h3>Maria's Boutique</h3>
+                <p>Maria, a 35-year-old entrepreneur, owns a small boutique shop in Owerri. Through our chamber, she has found valuable networking opportunities and business resources to grow her business.</p>
+                <img src="images/spotlight.jpg" alt="Member Spotlight" width="200">
             </div>
         </section>
-        <section class="cta">
-            <h2>Join Us Today</h2>
-            <p>Become a member and grow your business with us.</p>
-            <a href="join.html" class="button">Join Now</a>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Business Networking Mixer:</strong> April 15, 2026 - Connect with local business leaders.</li>
+                <li><strong>Economic Development Workshop:</strong> May 10, 2026 - Learn strategies for business growth.</li>
+                <li><strong>Community Service Day:</strong> June 5, 2026 - Give back to the community.</li>
+            </ul>
+            <a href="discover.html">View All Events</a>
+        </section>
+        <section id="join-cta">
+            <h2>Become a Member</h2>
+            <p>Join our chamber to access exclusive benefits, networking opportunities, and resources to support your business.</p>
+            <a href="join.html" class="cta-button">Apply Now</a>
         </section>
     </main>
-
     <footer>
-        <div class="social">
-            <a href="https://github.com/yourgithubusername">GitHub</a>
-            <a href="https://www.linkedin.com/in/yourlinkedinprofile">LinkedIn</a>
-            <a href="#">Other Social</a>
-        </div>
-        <p>&copy; <span id="year"></span> Obinna Glory Chinaza N | Nigeria</p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="current-year"></span> Imo State Chamber of Commerce. All rights reserved.</p>
+        <p>Contact: info@imostatechamber.com | Phone: +234 XXX XXX XXXX</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>

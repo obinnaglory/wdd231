@@ -1,0 +1,77 @@
+@media screen and (min-width: 768px) {
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: #006699;
+    }
+
+    h1, h2 {
+        background: #004466;
+        color: white;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-wrap {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-me {
+        flex: 1;
+    }
+
+    .about-image {
+        width: min(100%, 320px);
+        height: auto;
+    }
+
+    section {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        background: #f9f9f9;
+    }
+
+    .spotlights {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .spotlight {
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+
+    .business, .level {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .images {
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+.directory-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}

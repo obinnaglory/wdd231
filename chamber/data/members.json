@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Imo Tech Hub",
+        "address": "123 Tech Street, Owerri, Imo State",
+        "phone": "(234) 123-4567",
+        "website": "https://www.imotechhub.com",
+        "image": "techhub.jpg",
+        "membership": 3,
+        "description": "Innovative tech solutions for businesses in Owerri."
+    },
+    {
+        "name": "Palm Oil Industries Ltd",
+        "address": "456 Palm Road, Orlu, Imo State",
+        "phone": "(234) 234-5678",
+        "website": "https://www.palmoilimo.ng",
+        "image": "palmoil.jpg",
+        "membership": 2,
+        "description": "Sustainable palm oil production and processing."
+    },
+    {
+        "name": "Imo Logistics",
+        "address": "789 Transport Ave, Owerri, Imo State",
+        "phone": "(234) 345-6789",
+        "website": "https://www.imologistics.com",
+        "image": "logistics.jpg",
+        "membership": 1,
+        "description": "Reliable transportation and supply chain services."
+    },
+    {
+        "name": "Creative Studios Imo",
+        "address": "101 Art Lane, Okigwe, Imo State",
+        "phone": "(234) 456-7890",
+        "website": "https://www.creativestudiosimo.ng",
+        "image": "creativestudios.jpg",
+        "membership": 3,
+        "description": "Creative design and media services."
+    },
+    {
+        "name": "AgriFarm Imo",
+        "address": "202 Farm Road, Mbaitoli, Imo State",
+        "phone": "(234) 567-8901",
+        "website": "https://www.agrifarmimo.com",
+        "image": "agrifarm.jpg",
+        "membership": 2,
+        "description": "Modern agricultural practices and farm supplies."
+    },
+    {
+        "name": "EduCenter Imo",
+        "address": "303 Education St, Owerri, Imo State",
+        "phone": "(234) 678-9012",
+        "website": "https://www.educenterimo.ng",
+        "image": "educenter.jpg",
+        "membership": 1,
+        "description": "Educational resources and training programs."
+    },
+    {
+        "name": "HealthCare Imo",
+        "address": "404 Health Ave, Orlu, Imo State",
+        "phone": "(234) 789-0123",
+        "website": "https://www.healthcareimo.com",
+        "image": "healthcare.jpg",
+        "membership": 3,
+        "description": "Quality healthcare services and medical supplies."
+    }
+]
