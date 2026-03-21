@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imo State Chamber of Commerce - Connecting Businesses, Empowering Communities in Imo State, Nigeria">
+    <meta name="author" content="Obinna Glory Chinaza N">
+    <title>WDD 231 | Imo State Chamber of Commerce</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="../styles/small.css" rel="stylesheet">
+    <link href="../styles/larger.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <header>
+        <!-- <img src="../images/logo.svg" alt="Site Logo"> -->
+        <span>OBINNA GLORY CHINAZA N</span>
+        <button id="menuButton">☰</button>
+    </header>
+
+    <nav id="navMenu">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Chamber</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="../final/index.html">Final</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Imo State Chamber of Commerce</h1>
+            <p>Connecting Businesses, Empowering Communities in Imo State, Nigeria</p>
+            <div class="weather">
+                <h3>Current Weather</h3>
+                <p id="weather">Sunny, 28°C</p>
+            </div>
+        </section>
+        <section class="community">
+            <h2>Community Information</h2>
+            <p>Imo State is located in southeastern Nigeria, known for its rich cultural heritage, oil palm production, and entrepreneurial spirit. Our chamber supports local businesses and fosters growth in this vibrant state.</p>
+            <p>Population: ~5.4 million | Area: 5,530 km² | Capital: Owerri</p>
+        </section>
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight">
+                <h3>Imo Tech Hub</h3>
+                <p>Innovative tech solutions for businesses in Owerri.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Palm Oil Industries Ltd</h3>
+                <p>Sustainable palm oil production and processing.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Imo Logistics</h3>
+                <p>Reliable transportation and supply chain services across the state.</p>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Join Us Today</h2>
+            <p>Become a member and grow your business with us.</p>
+            <a href="join.html" class="button">Join Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/yourgithubusername">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourlinkedinprofile">LinkedIn</a>
+            <a href="#">Other Social</a>
+        </div>
+        <p>&copy; <span id="year"></span> Obinna Glory Chinaza N | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

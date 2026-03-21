@@ -12,9 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/larger.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
 
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
@@ -24,31 +23,33 @@
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="Site Logo">
-        <span>Your Name</span>
+        <!-- <img src="images/logo.svg" alt="Site Logo"> -->
+        <span>OBINNA GLORY CHINAZA N</span>
         <button id="menuButton">☰</button>
     </header>
 
     <nav id="navMenu">
         <a href="index.html">Home</a>
-        <a href="chamber/index.html">Chamber</a>
+        <a href="chambers.html">Chamber Project</a>
         <a href="final/index.html">Final</a>
     </nav>
 
     <main>
         <h1>Home</h1>
-        <section>
-            <h2>Section One</h2>
-            <p>Content goes here...</p>
+        <section class="about-wrap">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>I am a passionate web developer with experience in creating responsive and user-friendly websites. I enjoy learning new technologies and applying them to solve real-world problems.</p>
+            </div>
+            <img class="about-image" src="images/1000119656.jpg" alt="Profile picture of Obinna Glory Chinaza N">
         </section>
-        <section>
-            <h2>Section Two</h2>
-            <p>Content goes here...</p>
+        <section id="coursesSection">
+            <h2>Courses</h2>
+            <div id="courseFilters" class="course-filters"></div>
+            <div id="courseContainer"></div>
         </section>
-        <section>
-            <h2>Section Three</h2>
-            <p>Content goes here...</p>
-        </section>
+        
+        
     </main>
 
     <footer>
@@ -57,7 +58,7 @@
             <a href="https://www.linkedin.com/in/yourlinkedinprofile">LinkedIn</a>
             <a href="#">Other Social</a>
         </div>
-        <p>&copy; <span id="year"></span> Obinna Glory Chinaza .N | Nigeria</p>
+        <p>&copy; <span id="year"></span> Obinna Glory Chinaza N | Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 </body>
