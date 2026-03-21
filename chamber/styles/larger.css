@@ -3,18 +3,75 @@
         display: none;
     }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background: #006699;
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: block;
+        margin: 0 auto;
     }
 
-    h1, h2 {
-        background: #004466;
-        color: white;
-        padding: 1rem;
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        background: #006699;
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
         margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.35rem 0.6rem;
+    }
+
+    nav a:hover {
+        background: #00557f;
+        border-radius: 4px;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .images img:hover {
+        transform: scale(1.05);
+    }
+
+    .logo {
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .about-logo {
+        width: 100%;
+        max-width: 300px;
+        margin: 0.5rem;
+    }
+
+    .join-image {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 1rem auto;
     }
 
     main {
