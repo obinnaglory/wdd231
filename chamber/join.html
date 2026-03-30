@@ -39,7 +39,6 @@
         <a href="index.html">Chamber</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
         <a href="../final/index.html">Final</a>
     </nav>
 
@@ -67,26 +66,70 @@
         <section class="form">
             <h2>Membership Application</h2>
             <form action="#" method="post">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" required>
+                <form method="get" action="thankyou.html">
+  <label>
+    First Name:
+    <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+  </label>
 
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" required>
+  <label>
+    Last Name:
+    <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+  </label>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+  <label>
+    Email:
+    <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
+  </label>
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
+  <label>
+    Mobile Phone:
+    <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required>
+  </label>
 
-                <label for="business">Business Name:</label>
-                <input type="text" id="business" name="business" required>
+  <label>
+    Organization Name:
+    <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+  </label>
 
-                <label for="level">Membership Level:</label>
-                <select id="level" name="level" required>
-                    <option value="nonprofit">Non-Profit</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
+  <label>
+    Membership Level:
+    <select name="membership" required>
+      <option value="np">NP Membership (Non-Profit)</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+  </label>
+
+  <label>
+    Organization Description:
+    <textarea name="description" title="Organization Description"></textarea>
+  </label>
+
+  <input type="hidden" name="timestamp" id="timestamp">
+
+  <input type="submit" value="Submit Application">
+ <div class="card">
+  <h3>Bronze Membership</h3>
+  <p>Affordable entry-level membership.</p>
+  <button onclick="document.getElementById('bronzeModal').showModal()">Learn More</button>
+</div>
+
+<dialog id="bronzeModal">
+  <h2>Bronze Membership Benefits</h2>
+  <p>Includes event discounts, basic advertising, and networking opportunities.</p>
+  <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+</dialog>
+
+</form>
+
+
+<script>
+  // Auto-fill timestamp when form loads
+  document.getElementById("timestamp").value = new Date().toISOString();
+</script>
+
                 </select>
 
                 <label for="description">Business Description:</label>
