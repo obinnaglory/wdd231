@@ -1,0 +1,105 @@
+{
+  "products": [
+    {
+      "name": "Luxury Bone Straight Wig",
+      "price": "₦35,000",
+      "description": "Premium bone straight wig, soft and silky",
+      "image": "images/bonestraight.webp"
+    },
+    {
+      "name": "Curly Wig",
+      "price": "₦28,000",
+      "description": "Beautiful full curly wig",
+      "image": "images/culywigs.webp"
+    },
+    {
+      "name": "Frontal Wig",
+      "price": "₦40,000",
+      "description": "High-quality frontal wig",
+      "image": "images/frontal.webp"
+    },
+    {
+      "name": "Luxury Nail Set",
+      "price": "₦8,000",
+      "description": "Stylish long-lasting nail design",
+      "image": "images/luxurynails.webp"
+    },
+    {
+      "name": "Short Bob Wig",
+      "price": "₦22,000",
+      "description": "Trendy bob style wig",
+      "image": "images/shortbub.webp"
+    },
+    {
+      "name": "Colored Wig",
+      "price": "₦30,000",
+      "description": "Custom colored wig",
+      "image": "images/coloredwig.webp"
+    },
+    {
+      "name": "Eyelash Extension",
+      "price": "₦5,000",
+      "description": "Natural and bold lash options",
+      "image": "images/lashes.webp"
+    }
+  ],
+
+  "services": [
+    {
+      "name": "Wig Installation",
+      "price": "₦10,000",
+      "type": "Hair",
+      "description": "Professional wig installation",
+      "image": "images/installation.webp"
+    },
+    {
+      "name": "Frontal Installation",
+      "price": "₦15,000",
+      "type": "Hair",
+      "description": "Flawless frontal laying",
+      "image": "images/frontalinstall.webp"
+    },
+    {
+      "name": "Braiding",
+      "price": "₦8,000",
+      "type": "Hair",
+      "description": "Neat and long-lasting braids",
+      "image": "images/braid.webp"
+    },
+    {
+      "name": "Hair Styling",
+      "price": "₦6,000",
+      "type": "Hair",
+      "description": "Professional styling for all occasions",
+      "image": "images/styling.webp"
+    },
+    {
+      "name": "Nail Fixing",
+      "price": "₦5,000",
+      "type": "Beauty",
+      "description": "Clean and beautiful nail work",
+      "image": "images/nailfixing.webp"
+    },
+    {
+      "name": "Pedicure & Manicure",
+      "price": "₦6,000",
+      "type": "Beauty",
+      "description": "Complete hand and foot care",
+      "image": "images/pedicure.webp"
+    },
+    {
+      "name": "Makeup Service",
+      "price": "₦12,000",
+      "type": "Beauty",
+      "description": "Glam makeup for events",
+      "image": "images/makeup.webp"
+    },
+    {
+      "name": "Home Service",
+      "price": "Varies",
+      "type": "Service",
+      "description": "We come to your location (extra charges apply)",
+      "image": "images/homeservice.webp"
+    }
+  ]
+}
