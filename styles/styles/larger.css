@@ -1,0 +1,35 @@
+@media (min-width: 32rem) {
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* hide hamburger on desktop */
+    #menu {
+        display: none;
+    }
+
+    /* desktop navigation */
+    #navMenu {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .branding img {
+        width: 110px;
+    }
+
+    /* CONTACT FORM */
+    .contact form {
+        max-width: 800px;
+    }
+
+    .contact {
+        padding: 3rem 6rem;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <meta description="this is my WDD 231 home page, this is my introduction and it has easy navigation">
+    <meta name="author" content="Obinna Glory Chinaza">
+    <link rel="stylesheet" href="styles/styles/small.css">
+    <link rel="stylesheet" href="styles/styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="chrome-extension://liecbdmkiiihnedobmlmillhodjkdmd/js/recordConsoleEvents.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/logo.webp" alt="site logo" width="120" height="60">
+                <span>Obinna Glory Chinaza </span>
+            </div>
+            <button id="menu" aria-label="Toggle navigation menu" arial-controls="navMenu"></button> 
+        </header>
+        <nav id="navmenue" class="nav-box">
+                <a href="index.html">Home</a>
+                <a href="Chamber.html">Chamber project</a>
+                <a href="Final-projects.html">FinalProjects</a>
+        </nav>
+        <main>
+            <h1>HOME</h1>
+            <div class="top-grid">
+              <section class="top-grid">
+                <h2>About Me</h2>
+                <p>My name is Obinna Glory Chinaza, I am a student of WDD 231 at Portland State University. I am a web developer and I have a passion for creating beautiful and functional websites. I have a strong background in HTML, CSS, JavaScript, and other web technologies. I am always looking to learn new skills and improve my craft. I am excited to be a part of this course and I look forward to learning from my peers and instructors.</p>
+              </section>
+              <section class="photo">
+                <h2>My Photo</h2>
+                <img src="images/mephotos.jpeg" alt="My photo" width="200" height="250">
+              </section>
+            </div>
+            <section class="certificate">
+                <h2>Web Certificate Courses</h2>
+                <div class="filters">
+                    <buttom id="all">ALL</buttom>
+                    <buttom id="wdd">WDD</buttom>
+                    <buttom id="cse">CSE</buttom>
+                    <button id="wdd130">WDD130</button>
+                    <button id="wdd131">WDD131</button>
+                    <button id="wdd231">WDD231</button>
+                </div>
+                <div id="courseList">
+                    <div class="course-card completed">
+                        <h3>WDD130</h3>
+                        <p>type: WDD</p>
+                        <p>credits: 3</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>WDD131</h3>
+                        <p>type: WDD</p>
+                        <p>credits: 3</p>
+                </div>
+                <div class="course-card completed">
+                        <h3>CSE110</h3>
+                        <p>type: CSE</p>
+                        <p>credits: 3</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>CSE210</h3>
+                        <p>type: CSE</p>
+                        <p>credits: 4</p>
+                    </div>
+                    <div class="course-card">
+                        <h3>CSE121</h3>
+                        <p>type: CSE</p>
+                        <p>credits: 4</p>
+                    </div>
+                    <P>
+                        The total for the courses listed above is  "
+                        <span id="credits11"></span>"
+                    </P>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/obinna-glory-chinaza-0b1b3a1b6/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/linkedin.png" alt="LinkedIn" width="30" height="30">
+                    </a>
+                    <a href="https://github.com/obinnaglory" target="_blank" rel="noopener noreferrer">
+                        <img src="images/github.png" alt="GitHub" width="30" height="30">
+                    </a>
+                    <a href="https://twitter.com/ObinnaGloryC" target="_blank" rel="noopener noreferrer">
+                        <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+                    </a>
+                    <a href="https://www.instagram.com/obinnaglorychinaza/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/instagram.webp" alt="Instagram" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>
+                    "© "
+                    <span id="currentYear">2026</span>
+                    "Obinna Glory Chinaza| Imo, Nigeria"
+                </p>
+                <p>
+                "last updated: "
+                <span id="lastUpdated">07/08/2026 6:24:50</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
