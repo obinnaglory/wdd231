@@ -1,0 +1,45 @@
+/* larger.css */
+
+/* For screens wider than 640px */
+@media (min-width: 640px) {
+  nav li {
+    margin: 0 1rem;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .member-card {
+    text-align: left;
+  }
+
+  .member-card img {
+    width: 150px;
+    float: left;
+    margin-right: 1rem;
+  }
+}
+.membership-level {
+  font-weight: bold;
+  color: #2E8B57;
+  margin-top: 0.5rem;
+}
+
+/* For screens wider than 1024px */
+@media (min-width: 1024px) {
+  header, footer {
+    text-align: left;
+    padding: 1.5rem 3rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

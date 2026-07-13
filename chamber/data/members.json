@@ -1,0 +1,65 @@
+[
+  {
+    "name": "GreenLeaf Organics",
+    "address": "45 Market Street, mbaise",
+    "phone": "0803-555-1234",
+    "website": "https://greenleaforganics.ng",
+    "image": "green leaf.webp",
+    "membershipLevel": 3,
+    "description": "Local organic produce supplier supporting sustainable farming."
+  },
+  {
+    "name": "TechNova Solutions",
+    "address": "12 Innovation Drive, mbaise",
+    "phone": "0802-987-6543",
+    "website": "https://technova.com.ng",
+    "image": "technova.webp",
+    "membershipLevel": 2,
+    "description": "IT consulting and software development for small businesses."
+  },
+  {
+    "name": "Harbor Café",
+    "address": "88 Waterfront Road, mbaise",
+    "phone": "0812-222-3344",
+    "website": "https://harborcafe.ng",
+    "image": "harborcafe.webp",
+    "membershipLevel": 1,
+    "description": "Cozy café offering locally roasted coffee and pastries."
+  },
+  {
+    "name": "BrightPath Education",
+    "address": "23 Learning Avenue, mbaise",
+    "phone": "0809-111-2233",
+    "website": "https://brightpathedu.ng",
+    "image": "brightpath.webp",
+    "membershipLevel": 3,
+    "description": "Private tutoring and educational resources for students."
+  },
+  {
+    "name": "Rivers Realty",
+    "address": "7 Estate Lane, mbaise",
+    "phone": "0813-444-5566",
+    "website": "https://riversrealty.ng",
+    "image": "riversrealty.webp",
+    "membershipLevel": 2,
+    "description": "Real estate agency specializing in residential properties."
+  },
+  {
+    "name": "AquaPure Water Co.",
+    "address": "19 Industrial Park, mbaise",
+    "phone": "0806-777-8899",
+    "website": "https://aquapurewater.ng",
+    "image": "aquapure.webp",
+    "membershipLevel": 1,
+    "description": "Bottled water company committed to clean hydration."
+  },
+  {
+    "name": "Sunrise Fitness Center",
+    "address": "101 Wellness Street, mbaise",
+    "phone": "0815-333-7788",
+    "website": "https://sunrisefitness.ng",
+    "image": "sunrisefitness.webp",
+    "membershipLevel": 2,
+    "description": "Modern gym offering personal training and wellness programs."
+  }
+]
