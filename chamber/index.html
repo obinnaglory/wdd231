@@ -20,30 +20,45 @@
         <link rel="stylesheet" href="../styles/styles/normalize.css">
         <link rel="stylesheet" href="styles/larger.css">
         <script src="scripts/directory.js" defer></script>
-        <script src="data/members.json" defer></script>
+        <script src="/chamber/scripts/weather.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Mbaise Chamber of Commerce</h1>
+            <h1>Welcome to the Mbaise Chamber of Commerce</h1>
             <nav>
                 <ul>
-                    <li><a href="/chamber/index.html">Home</a></li>
-                    <li><a href="chamber/chamber.html">Chamber Project</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chamber/directory.html">Directory</a></li>
                     <li><a href="chamber/final-projects.html">Final Projects</a></li>
                 </ul>
             </nav>
         </header>
         <!---main content-->
         <main>
-            <section id="view-toggle">
-                <button id="grid-view">Grid View</button>
-                <button id="list-view">List View</button>
+            <!---hero image-->
+            <section class="hero">
+                <img src="/chamber/images/hero.webp" alt="Mbaise Chamber of Commerce" width="80" height="40">
             </section>
-            <section id="members" class="grid">
-                <!--member cards or list items will be dynamically inserted here-->
+            <h1> Up coming events:</h1>
+            <p>1. yam festival; 29 july 2026</p>
+            <img src="/chamber/images/yamfestival.webp" alt="yam festival" width="200" height="150">
+            <p>2. cultural dance; 30 july 2026</p> 
+            <img src="/chamber/images/culturaldance.webp" alt="cultural dance" width="200" height="150">    
+            <p>3. music concert; 31 july 2026</p>
+            <img src="/chamber/images/musicconcert.webp" alt="music concert" width="200" height="150">
+            <!---weather information-->
+            <section class="weather">
+                <h2>Weather Information</h2>
+                <div id="weather">
+                    <p>Loading weather data...</p>
+                </div>
+            </section>
+            <!---call to action-->
+            <section class="CTA">
+                <a href="join.html" class="cta-button">Join the Chamber</a>
             </section>
         </main>
         <!---footer-->
