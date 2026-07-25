@@ -1,74 +1,131 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Directory</title>
-        <meta description="this is my WDD 231 directory page, this is my introduction and it has easy navigation">
-        <meta name="author" content="Obinna Glory Chinaza">
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbaise Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Mbaise Chamber of Commerce">
+    <meta name="author" content="Your Name">
 
-        <!-- Facebook Open Graph Meta -->
-       <meta property="og:title" content="Chamber of Commerce Directory">
-       <meta property="og:description" content="Explore our Chamber of Commerce member directory. Connect with local businesses and organizations.">
-       <meta property="og:image" content="https://yourgithubrepo.github.io/images/social-preview.png">
-       <meta property="og:url" content="https://yourgithubrepo.github.io/directory.html">
-       <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Mbaise Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the Mbaise Chamber of Commerce">
+    <meta property="og:image" content="https://yourgithubrepo.github.io/images/social-preview.png">
+    <meta property="og:url" content="https://yourgithubrepo.github.io/index.html">
+    <!--favicon-->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!----->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css"
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="chrome-estension://liecbddmkiiihnedobmlmillhodjkdmd/js/recordConsoleEvent.js"></script>
+</head>
 
-        <link rel="stylesheet" href="styles/small.css">
-        <link rel="stylesheet" href="../styles/styles/normalize.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <script src="scripts/directory.js" defer></script>
-        <script src="/chamber/scripts/weather.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to the Mbaise Chamber of Commerce</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="chamber/directory.html">Directory</a></li>
-                    <li><a href="chamber/final-projects.html">Final Projects</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!---main content-->
-        <main>
-            <!---hero image-->
-            <section class="hero">
-                <img src="/chamber/images/hero.webp" alt="Mbaise Chamber of Commerce" width="80" height="40">
-            </section>
-            <h1> Up coming events:</h1>
-            <p>1. yam festival; 29 july 2026</p>
-            <img src="/chamber/images/yamfestival.webp" alt="yam festival" width="200" height="150">
-            <p>2. cultural dance; 30 july 2026</p> 
-            <img src="/chamber/images/culturaldance.webp" alt="cultural dance" width="200" height="150">    
-            <p>3. music concert; 31 july 2026</p>
-            <img src="/chamber/images/musicconcert.webp" alt="music concert" width="200" height="150">
-            <!---weather information-->
-            <section class="weather">
-                <h2>Weather Information</h2>
-                <div id="weather">
-                    <p>Loading weather data...</p>
+<body>
+
+<header>
+   <div class="wrapper">
+    <div class="logo">
+        <img src="images/logo.webp" alt="Mbaise Chamber of Commerce Logo" fetchpriority="high">
+    </div>
+    <div class="chamber">
+        <h2>Mbaise</h2>
+        <h3>Chamber of Commerce</h3>
+    </div>
+    <div class="top-nav">
+        <nav class="top-nav" id="top-nav">
+            <a href="index.html">Home</a></li>
+            <a href="chamber.html">Chamber</a></li>
+            <a href="directory.html">Directory</a></li>
+            <a href="join.html">Join</a></li>
+            <button type="button" class="icon" id="demo" aria-label="toggle navigation menu">
+                <span aria-hidden="true">Ξ</span>
+            </button>
+        </nav>
+    </div>
+   </div>
+   <span id="updateFormatted">23 july 2026</span>
+   <p id="banner">
+    "come and participate in our chamber of commerce and be part of the business community"
+   </p>
+</header>
+<main>
+    <div class="container">
+        <div class="forecast-main-card">
+            <div class="forecast-conatiner">
+                <h3 class="forecast-tittle">Current Weather</h3>
+                <div class="forecast-days-container">
+                    <div class="forecast-day-item">
+                        <span class="forecast-date">July 23</span>
+                        <img src="images/weather-icon.png" alt="Weather Icon" class="forecast-icon">
+                        <span class="forecast-temp">
+                            <strong>25°C</strong>
+                        </span>
+                        <span class="forecast-desc">Sunny</span>
+                    </div>
+                    <div class="forecast-day-item">
+                        <span class="forecast-date">July 24</span>
+                        <img src="images/weather-icon.png" alt="Weather Icon" class="forecast-icon">
+                        <span class="forecast-temp">
+                            <strong>28°C</strong>
+                        </span>
+                        <span class="forecast-desc">Partly Cloudy</span>
+                        <div class="join">
+                            <button class="join-us">Join Us!</button>
+                            <div class="text-1">
+                                <p>
+                                    "Discover how to us our chamber of commerce and learn its benefits."
+                                </p>
+                            </div>
+                            <div class="hero-image">
+                                <picture>
+                                    <img scr="images/hero.webp" alt="welcome to mbaise"
+                                    class="landscape" loading="lazy">
+                                </picture>
+                                <h1 class="welcome">Welcome to Mbaise</h1>
+                                <h2 class="visually-hidden">Chaber of Commerce</h2>
+                                <button class="button">Join the Chamber</button>
+                            </div>
+                            <div class="news-release">
+                                <h3>Latest News</h3>
+                                <p class="text-1">
+                                    "There will be an election holding among the share holders of this chamber to select new leaders to lead the chamber, make new laws in order to direct the affairs of the chamber more effectively, it will be help on the 30th of July 2026"
+                                </p>
+                            </div>
+                            <div class="spotlights">
+                                <div class="yam festivals">
+                                    <h4>mbaise yam festival</h4>
+                                    <img src="images/yamfestival.webp" alt="the yam festival of ndi mbaise, come and celebrate with us." class="img-spotlight">
+                                    <p class="text-1">Iri Ji Mbaise</p>
+                                </div>
+                                <div class="music concert">
+                                    <h4>Music Concert</h4>
+                                    <img src="images/musicconcert.webp" alt="mbaise musical concert" class="img-spotlight">
+                                    <p class="text-1">Mbaise Music Concert, come participate and lets have fun</p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-            </section>
-            <!---call to action-->
-            <section class="CTA">
-                <a href="join.html" class="cta-button">Join the Chamber</a>
-            </section>
-        </main>
-        <!---footer-->
-        <footer>
-            <p>Contact: info@chamber.org | Phone: (555) 123-4567</p>
-            <p>Obinna Glory Chinaza| Imo, Nigeria | WDD 231</p>
-            <p>Last Modified: <span id="lastModified"></span></p>
-        </footer>
-         <script>
-        document.getElementById("lastModified").textContent = document.lastModified;
-         </script>
-    </body>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Contact: info@chamber.org | Phone: (555) 123-4567</p>
+    <p>Obinna Glory Chinaza| Imo, Nigeria | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <!-- Same footer -->
+</footer>
+<script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+</script>
+</body>
 </html>
