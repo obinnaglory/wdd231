@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Mbaise Chamber of Commerce</title>
+    <meta name="description" content="Join the Mbaise Chamber of Commerce and be part of the business community">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Join Mbaise Chamber of Commerce">
+    <meta property="og:description" content="Join the Mbaise Chamber of Commerce and be part of the business community">
+    <meta property="og:image" content="https://yourgithubrepo.github.io/images/social-preview.png">
+    <meta property="og:url" content="https://yourgithubrepo.github.io/join.html">
+    <!--favicon-->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <noscript>
+        "<link rel="stylesheet" href="https://font.googleapis.com/css2?" 
+        family=Roboto:wght@100&display=swap" />"
+    </noscript>
+    <!----->
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo-image" src="images/logo.webp" alt="mbaise chamber of commerce logo" fetchpriority="high">
+            </div>
+        <div class="chamber">
+            <h2>Mbaise</h2>
+            <h3>Chamber Of Commerce</h3>
+        </div>
+        <div class="top-nav">
+            <nav class="top-nav" id="Topnav">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="discover.html">Discover</a>
+                <a href="join.html">Join</a>
+                <button type="nutton" class="icon" id="demo" arial-label="toggle navigation menu">
+                    <span aria-hidden="true">Ξ</span>
+                </button>
+            </nav>
+        </div>
+        </div>
+        <span id="updateFormatted">Thrsday 30 july 2026</span>
+        <p id="banner">
+            "come join us at mbaise chamber of commerce, become a member and participate in our activities."
+        </p>
+    </header>
+    <main>
+        <!-----main-->
+        <div class="Join-container">
+            <h1>Join the Mbaise Chamber Of Commerce</h1>
+            <p>"Become a member of th Mbaise Chamber of Chamber and gain access to a network of both local and foreign businesses, job oppurtunities, entrepreneurs, and services"</p>
+            <div class="button-container">
+                <button class="button open-button">Sign Up Now!!</button>
+            </div>
+            <fieldset>
+                <dialog class="modal" id="newsletter" popover>
+                    <div class="form-container" id="myFormContainr">
+                        <form id="joinForm" method="get" action="thankyou.html">
+                            <p>Application Information</p>
+
+                            <!--first name-->
+                            <label class="top">
+                                first Name* 
+                                <input
+                                   type="text"
+                                   name="frame"
+                                   id="frame"
+                                   autocomplete="given-name"
+                                   title="Please enter your first name"
+                                   required
+                                />
+                </label>
+
+                <!-- Last Name -->
+                <label class="top">
+                  Last Name*
+                  <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    autocomplete="family-name"
+                    title="Please enter your last name"
+                    required
+                  />
+                </label>
+
+                <!-- Mobile Phone -->
+                <label class="top">
+                  Cell Phone*
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="1235551234"
+                    autocomplete="tel"
+                    title="Please enter a valid 10-digit phone number"
+                    required
+                  />
+                </label>
+
+                <!-- Email Address -->
+                <label class="top">
+                  Email*
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="someone@gmail.com"
+                    autocomplete="email"
+                    title="Please enter a valid email address"
+                    required
+                  />
+                </label>
+
+                <!-- Website -->
+                <label class="top">
+                  Website
+                  <input
+                    type="url"
+                    name="url"
+                    id="url"
+                    placeholder="https://"
+                    autocomplete="url"
+                  />
+                </label>
+
+                <p>Business Information</p>
+
+                <!-- Organization Name (Business Name) -->
+                <label class="top">
+                  Organization Name*
+                  <input
+                    id="business"
+                    type="text"
+                    name="business"
+                    autocomplete="organization"
+                    title="Please enter your business or organization name"
+                    required
+                  />
+                </label>
+
+                <!-- Organization Title (Business Position) -->
+                <label class="top" for="position">
+                  Organization Title
+                  <input
+                    id="position"
+                    type="text"
+                    name="position"
+                    list="position-options"
+                    autocomplete="organization-title"
+                    placeholder="e.g. Manager, President, Member"
+                    pattern="[A-Za-z\s\-]{7,}"
+                    title="Please enter at least 7 characters (only letters, spaces, and hyphens allowed)."
+                    required
+                  />
+                </label>
+
+                <datalist id="position-options">
+                  <option value="Business Professional"></option>
+                  <option value="Legal representative"></option>
+                  <option value="Manager"></option>
+                  <option value="President"></option>
+                  <option value="Partner"></option>
+                  <option value="Secretary"></option>
+                </datalist>
+
+                <!-- Membership Level (4 opciones requeridas: np, bronze, silver, gold) -->
+                <label class="top">
+                  Membership Type*
+                  <input
+                    id="membership"
+                    type="text"
+                    name="membership"
+                    placeholder="Click on a medal below..."
+                    title="Please select a membership level by clicking on a medal"
+                    readonly
+                    required
+                  />
+                </label>
+
+                <div class="membership-container">
+                  <div
+                    class="medal np"
+                    data-value="np"
+                    title="NP Membership (Non-Profit / No Fee)"
+                  >
+                    <p>NP</p>
+                  </div>
+                  <div
+                    class="medal bronze"
+                    data-value="bronze"
+                    title="Bronze Membership"
+                  >
+                    <p>BR</p>
+                  </div>
+                  <div
+                    class="medal silver"
+                    data-value="silver"
+                    title="Silver Membership"
+                  >
+                    <p>SL</p>
+                  </div>
+                  <div
+                    class="medal gold"
+                    data-value="gold"
+                    title="Gold Membership"
+                  >
+                    <p>GD</p>
+                  </div>
+                </div>
+
+                <!-- Business Address -->
+                <label class="top">
+                  Business Address
+                  <input
+                    id="businessAdress"
+                    type="text"
+                    name="businessAdress"
+                    autocomplete="address-line1"
+                  />
+                </label>
+
+                <!-- Current Date -->
+                <label class="top">
+                  Current Date
+                  <input id="current-date" type="date" name="current-date" />
+                </label>
+
+                <!-- Campo oculto para la hora de envio -->
+                <input type="hidden" id="current-time" name="current-time" />
+
+                <!-- Organization Description -->
+                <label class="top1">
+                  Organization Description
+                  <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Write something.."
+                    title="Please enter a brief description of your organization"
+                  ></textarea>
+                </label>
+
+                <input
+                  type="submit"
+                  value="Propose My Course"
+                  class="submitBtn"
+                />
+              </form>
+            </div>
+          </dialog>
+        </fieldset>
+        <fieldset>
+          <p>Membership options</p>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="5" scope="colgroup">
+                  Subscription Type Membership
+                </th>
+              </tr>
+              <tr>
+                <th scope="col">Benefist</th>
+                <th scope="col">Non-profit</th>
+                <th scope="col">Bronze</th>
+                <th scope="col">Silver</th>
+                <th scope="col">Gold</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-column">Inclusion in our Business Directory Page</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  Publication of upcoming events on billboard
+                </td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  Business advertisement on monthly newsletter
+                </td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  Services for Macro Businesses
+                </td>
+                <td>--</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">Business Training</td>
+                <td>--</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  Business Advice for development
+                </td>
+                <td>--</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  Specialized advice and consultancies
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  Networking spaces And Commercial appointments
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  Business informations
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>✅</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                Legal Advice and Resolution
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">
+                  International Markets and companies for coperation
+                </td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td class="text-column">Business ideas</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>✅</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Annual Costs</td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="audience"
+                      value="Non Profit Membership"
+                    />
+                    Free</label
+                  >
+                </td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="audience"
+                      value="Bronze Membership"
+                    />
+                    naira #2000</label
+                  >
+                </td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="audience"
+                      value="Silver Membership"
+                    />
+                    naira #3000</label
+                  >
+                </td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="audience"
+                      value="Gold Membership"
+                    />
+                    naira #5000</label
+                  >
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </fieldset>
+      </div>
+    </main>
+    <footer>
+      <img
+        class="logo-footer"
+        src="images/logo.webp"
+        alt="Logo of Mbaise Chamber Of Commerce"
+        width="300"
+        height="100"
+        fetchpriority="high"
+        decoding="async"
+      />
+      <div class="social-links" role="navigation" aria-label="Social links">
+        <!-- Enlace a LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/cristian-moises-de-la-hoz-escorcia-189a07317"
+          aria-label="LinkedIn"
+        >
+          <img
+            src="images/linkedin.webp"
+            alt="LinkedIn"
+            class="social-icon-img"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+        <!-- Enlace a GitHub -->
+        <a href="https://obinnaglory.github.io/introduction/" aria-label="GitHub">
+          <img
+            src="images/github.webp"
+            alt="GitHub"
+            class="social-icon-img"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+        <!-- Enlace a X (anteriormente Twitter) -->
+        <a
+          href="https://x.com/cride78?s=11&t=48RJdiLeyvtcvkTPRfRHIw"
+          aria-label="X"
+        >
+          <img
+            src="images/twitter.webp"
+            alt="X"
+            class="social-icon-img"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      </div>
+      <div class="contact">
+        <h2>Mbaise Chamber of Commerce</h2>
+        <address>
+          <p>Aboh Junction, Aboh Mbaise</p>
+          <p>Mbaise, Imo</p>
+        </address>
+      </div>
+      <p class="info-contact">
+        obinnaglory12@gmail.com <br />+(234) 705-0444-165 <br />📍Location Map
+      </p>
+      <p class="copyright">
+        &copy; <span id="year"></span> Mbaise Chamber of Commerce | Obinna Glory Chinaaza N.| WD 231 Project | Last Modification: <span id="update"></span>
+      </p>
+    </footer>
+                            

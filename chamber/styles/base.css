@@ -1,0 +1,1251 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+
+:root {
+  /* Paleta Institucional - Cámara de Comercio de Barranquilla */
+  --primary-color: #004c9e; /* Azul Institucional CCB (Header, títulos principales) */
+  --secondary-color: #f0f4f8; /* Gris/Azulado Muy Claro (Tarjetas, módulos y contenedores) */
+  --accent1-color: #3481fe; /* Azul Acción / Interactivo (Botones CTA, enlaces, hovers) */
+  --accent2-color: #e2e8f0; /* Gris Claro de Borde / Divisor */
+
+  /* Fuentes del proyecto */
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Inter", sans-serif;
+
+  /* Asignación funcional sobre fondos claros */
+  --headline-color-on-white: #004c9e; /* Titulares sobre fondo blanco/claro */
+  --headline-color-on-color: #ffffff; /* Titulares sobre botones o banners de color */
+  --paragraph-color-on-white: #1a1a1a; /* Texto oscuro sobre blanco (Gris Grafito) */
+  --paragraph-color-on-color: #ffffff; /* Texto sobre elementos con color acento */
+  --paragraph-background-color: #ffffff; /* Fondo general de la página (Blanco) */
+
+  /* Navegación al estilo camarabaq.org.co */
+  --nav-link-color: #004c9e; /* Enlaces azul institucional */
+  --nav-background-color: #ffffff; /* Barra superior limpia en blanco */
+  --nav-hover-link-color: #ffffff; /* Texto blanco al resaltar */
+  --nav-hover-background-color: #3482fe; /* Fondo azul brillante en hover */
+
+  --back: var(--primary-color);
+  --back2: var(--secondary-color);
+  --foredark: var(--paragraph-color-on-white);
+  --forelight: var(--headline-color-on-color);
+  --border: var(--secondary-color);
+  --borderlight: var(--primary-color);
+  --shadow: var(--accent1-color);
+  --zebra: var(--paragraph-background-color);
+}
+
+html {
+  background-color: var(--secondary-color);
+  margin: auto;
+}
+
+body {
+  width: 100%;
+  max-width: 2000px; /* Ajusta según el diseño general */
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+/* header manipulations */
+
+/* --- HEADER --- */
+header {
+  display: grid;
+  padding-bottom: 15px;
+  background-color: var(--primary-color);
+  line-height: 1.4;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+header h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+header h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Oculta un elemento de forma accesible para lectores de pantalla y validadores */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Corrección de contraste en el Banner */
+#banner {
+  background-color: var(--primary-color);
+  color: var(--paragraph-background-color);
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 0.5em;
+  font-weight: 600;
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--paragraph-background-color);
+}
+
+.wrapper > div {
+  background-color: var(--primary-color);
+  color: var(--headline-color-on-color);
+  text-align: center;
+  line-height: 9px;
+  font-size: 0.8vw;
+}
+
+.logo-image {
+  flex: 100%;
+}
+
+.chamber {
+  flex: 30%;
+}
+
+.social-red {
+  flex: 10%;
+  padding-top: 31px;
+}
+
+.img-log {
+  width: 100%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  margin-top: 5px;
+  background-color: var(--nav-background-color);
+}
+
+.img-red {
+  width: 40%;
+  background-color: var(--secondary-color);
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+  padding-top: 0.5em;
+  font-size: 2rem; /* Cambiado de 2.5vw a un tamaño fijo/escalable ideal */
+  margin-bottom: 0.2rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 2.4px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--headline-color-on-color);
+  font-size: 1.25rem; /* Cambiado de 2vw a 1.25rem */
+  font-weight: 400;
+}
+
+#updateFormatted {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin-block-start: 1em;
+  margin-block-end: 0em;
+  background-color: var(--paragraph-background-color);
+  padding-block: 9px;
+  font-weight: bolder;
+}
+
+/* this is the top nav css control */
+
+/* --- CONTROL DE LA NAVEGACIÓN --- */
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--nav-background-color);
+}
+
+.top-nav {
+  flex: 60%;
+  padding-top: 31px;
+}
+
+/* Estilos para los enlaces principales */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--nav-link-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.topnav a:hover,
+button.icon:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+/* Estilo para el enlace activo */
+/* Estilo suave con fondo claro y borde inferior */
+.topnav a.active {
+  background-color: var(--secondary-color); /* Gris/Azulado muy claro */
+  color: var(--primary-color);
+  font-weight: bold;
+  border-bottom: 3px solid var(--accent1-color);
+}
+
+/* Ocultar el botón de menú por defecto en pantallas grandes */
+.topnav .icon {
+  display: none;
+  background: transparent;
+  border: none;
+  color: greenyellow;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button.icon {
+  background: transparent;
+  border: none;
+  color: var(--nav-link-color);
+  cursor: pointer;
+  padding: 14px 1vw;
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+button.icon:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: rgb(18, 17, 103);
+  padding: 0.1em;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* --- VISTA MÓVIL (Menú Hamburguesa) --- */
+@media screen and (max-width: 47.9375em) {
+  /* Ocultar todos los enlaces excepto el primero (Home) */
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  /* Mostrar el botón de hamburguesa (usando .icon o button.icon) */
+  .topnav .icon {
+    float: right;
+    display: block;
+  }
+
+  /* Estado desplegado del menú cuando tiene la clase .responsive */
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Hover específico en el menú móvil */
+  .topnav.responsive a:hover {
+    background-color: var(
+      --nav-hover-background-color
+    ); /* Fondo azul al pasar el cursor */
+    color: var(--nav-hover-link-color); /* Texto blanco */
+  }
+}
+
+/* efect hover */
+
+#img-box:hover {
+  box-shadow: 0 0 50px var(--secondary-color);
+  width: 100%;
+}
+
+.img-efect:hover {
+  box-shadow: 0 0 50px var(--secondary-color);
+  width: 100%;
+}
+
+/* this section modificate main */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  width: 95%;
+  flex-direction: column;
+}
+
+/* Asegura que el contenedor de la imagen sirva de ancla */
+.hero-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Fuerza a la imagen a llenar el espacio asignado por el Grid */
+.hero-image img,
+.landscape {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Mantiene la proporción de la foto sin deformarla */
+  display: block;
+  border-radius: 0.5em;
+  margin-top: 18px;
+}
+
+/* El botón ahora es 100% responsivo */
+/* El botón responsivo se mantiene con porcentajes */
+.hero-image .button {
+  background-color: var(--paragraph-color-on-color);
+  color: var(--primary-color);
+  padding: 9px 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid var(--accent1-color);
+  border-radius: 1em;
+}
+
+.landscape {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* La tarjeta contenedora única */
+.forecast-main-card {
+  background-color: #63caf5d1;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.join {
+  background-color: var(--headline-color-on-white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.forecast-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--paragraph-color-on-white);
+}
+
+/* Contenedor interno que agrupa los 5 días */
+.forecast-days-container {
+  display: flex;
+  flex-direction: column; /* Cambia a 'row' si los prefieres alineados horizontalmente */
+  gap: 12px;
+  color: var(--paragraph-color-on-white);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.forecast-day-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+
+.forecast-day-item:last-child {
+  border-bottom: none; /* Quita la línea divisoria al último elemento */
+}
+
+.forecast-mini-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.weather {
+  background-color: var(--headline-color-on-white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.weather .weather_title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.weather .temp {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
+
+.weather .cloudy,
+.weather .wind,
+.weather .wind-ch {
+  color: var(--secondary-color);
+}
+
+.weather #weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.spotlights h4 {
+  color: black;
+  text-align: center;
+}
+
+/* --- FORMULARIO DE CONTACTO --- */
+
+/* join us css */
+#joinForm {
+  background-color: var(--paragraph-background-color);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.join-container p {
+  line-height: 36px;
+  max-width: 75%;
+  padding: 0.5em;
+  margin: 0 auto 1.5em auto;
+  color: var(--headline-color-on-white);
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+}
+
+.join-container h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+input[class="top"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  resize: vertical;
+  font-family: var(--heading-font);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: var(--heading-font);
+}
+
+input[class="sbs"] {
+  background-color: var(--accent1-color);
+  color: var(--headline-color-on-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: var(--heading-font);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--accent1-color);
+}
+
+fieldset {
+  margin: 2rem 0;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+}
+
+form legend {
+  color: var(--paragraph-color-on-white);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: var(--paragraph-color-on-white);
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--headline-color-on-white);
+  color: var(--headline-color-on-color);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 1.2rem;
+}
+
+form label.top input:required {
+  border-left: 6px red solid !important;
+}
+
+form label.top input:required:valid {
+  border-left: 6px green solid !important;
+}
+
+.top1 {
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  padding-top: 1rem;
+  color: var(--headline-color-on-white);
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  padding-left: 0rem;
+  font-family: var(--heading-font);
+}
+
+form label.top1 textarea {
+  font-size: 1em;
+  border: solid 1px var(--secondary-color);
+  border-radius: 10px;
+  padding: 15px 0px 15px 5px;
+  color: var(--paragraph-color-on-white);
+  width: 100%;
+  background-color: var(--accent2-color);
+  font-family: var(--heading-font);
+}
+
+#subject {
+  height: 200px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Clear floats after the columns */
+.top:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 0rem;
+  color: var(--headline-color-on-white);
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  font-family: var(--heading-font);
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  font-size: 0.8em;
+  border: solid 1px var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  color: var(--paragraph-color-on-white);
+  width: 95%;
+  max-width: 95%;
+  background-color: var(--accent2-color);
+  font-family: var(--heading-font);
+}
+
+/* this is the footer css control */
+
+footer {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: var(--secondary-color);
+}
+
+footer h2 {
+  color: var(--paragraph-color-on-white);
+}
+
+footer p {
+  color: var(--paragraph-color-on-white);
+  padding: 0em;
+  font-size: 1rem;
+}
+
+.contact {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 0.5em;
+  padding-top: 2em;
+  width: 96%;
+}
+
+.info-contact {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  font-family: paragraph-font;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 2em;
+  width: 96%;
+  color: var(--paragraph-color-on-white);
+}
+
+.logo-footer {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: min(100%, 300px);
+  height: auto;
+  aspect-ratio: 3 / 1;
+  justify-self: center;
+}
+
+.copyright {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  font-family: paragraph-font;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 96%;
+  color: var(--paragraph-color-on-white);
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.contact address p {
+  margin: 0; /* Elimina la separación superior e inferior entre los párrafos */
+  line-height: 1.4; /* Ajusta la altura de línea para un interlineado cómodo */
+}
+
+.contact address {
+  font-style: normal; /* Opcional: quita la cursiva predeterminada del elemento address */
+  margin-top: 5px; /* Un pequeño espacio opcional respecto al h2 */
+}
+
+/* Control global para los iconos de redes sociales */
+.social-links {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espaciado limpio entre iconos */
+  margin: 10px 0;
+  padding-top: 95px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 32px; /* Tamaño ideal para producción */
+  height: 32px;
+}
+
+.social-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media only screen and (max-width: 47.9375em) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    background-color: var(--primary-color);
+    line-height: 1.4;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--paragraph-background-color);
+  }
+
+  .img-log {
+    width: 20%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    color: var(--accent2-color);
+    font-size: 30px;
+    font-weight: bold;
+    width: 95%;
+    height: auto;
+  }
+
+  .hero-image {
+    order: 1;
+    position: relative;
+    display: inline-block;
+  }
+
+  .hero-image .welcome {
+    position: absolute;
+    top: 10px;
+    left: 215px;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+  }
+
+  /* Join */
+  .join {
+    order: 2;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .join .text-1 p {
+    border: none;
+    color: var(--paragraph-color-on-color);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .forecast-main-card {
+    order: 3;
+    height: 230px;
+    background-color: rgba(99, 202, 245, 0.82);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .forecast-days-container {
+    font-size: 20px;
+    font-weight: 600;
+    gap: 0px;
+  }
+
+  .forecast-days-container h3 {
+    line-height: 3.4px;
+  }
+
+  /* Weather */
+  .weather {
+    order: 4;
+    height: 250px;
+    margin: 8px auto;
+    text-align: center;
+  }
+
+  .weather .weather_title {
+    margin-top: 0.5em;
+    font-size: 1.2rem;
+  }
+
+  .weather #weather-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* News Relase */
+  .news-release {
+    order: 5;
+    height: 30%;
+    background-color: var(--paragraph-color-on-white);
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+  }
+
+  .news-release .text-1 {
+    border: none;
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  /* Spot Light */
+  .spotlights {
+    order: 6;
+    height: 500px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    color: var(--primary-color);
+  }
+
+  .spotlights .right2 {
+    background-color: #3481fe0f;
+    height: 235px;
+    margin-left: auto;
+    border: 1px solid var(--accent1-color);
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1em;
+    padding-top: 10px;
+  }
+
+  .spotlights .right3 {
+    background-color: #3481fe0f;
+    height: 235px;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid var(--accent1-color);
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1em;
+    padding-top: 10px;
+  }
+
+  .spotlights .right4 {
+    background-color: transparent;
+    padding: 0px;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    height: 0%;
+    color: transparent;
+    display: none;
+  }
+
+  /* this is the footer css control */
+
+  footer {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 20% 20% 20%;
+    background-color: var(--primary-color);
+  }
+
+  .contact {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; /* Cambiado de 2/3 a 3/4 */
+    text-align: center;
+    font-size: 0.5em;
+    padding-top: 0em;
+  }
+
+  .contact h1 {
+    font-size: 1.2rem; /* Título del footer */
+    color: var(--headline-color-on-color);
+  }
+
+  .contact h2 {
+    font-size: 0.95rem; /* Direcciones */
+    color: var(--accent2-color);
+    margin: 4px 0;
+  }
+
+  .info-contact {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5; /* Cambiado de 3/3 a 4/5 */
+    font-family: var(
+      --paragraph-font
+    ); /* Asegurar que use la variable correcta */
+    text-align: center;
+    font-size: 1.1em;
+    width: 96%;
+    color: var(--paragraph-color-on-color);
+    padding-top: 0em;
+  }
+
+  .logo-footer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    background-color: var(--paragraph-color-on-color);
+    display: block;
+  }
+
+  .social-links {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 0.5rem 0;
+    padding-top: 0rem;
+  }
+
+  .social-links a {
+    display: inline-block;
+    width: 44px; /* Tamaño adecuado para móviles */
+    height: 44px;
+    background-color: var(--paragraph-color-on-color);
+    border-radius: 50%;
+  }
+
+  .name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .copyright {
+    display: none;
+  }
+}
+
+/* discovery page css */
+
+@media only screen and (max-width: 47.9375em) {
+  footer p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+  }
+
+  .title {
+    color: var(--secondary-color);
+  }
+
+  .box-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    padding-bottom: 15px;
+    height: 470vw;
+    width: 100%;
+  }
+
+  .banner {
+    grid-column: 1 / 10;
+    grid-row: 1 / 2;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .box-section {
+    grid-column: 2 / 9;
+    grid-row: 2 / 5;
+    background: var(--accent1-color-soft);
+    padding-top: 0.5em;
+  }
+
+  .box-headline {
+    grid-column: 2 / 9;
+    grid-row: 2 / 3;
+    text-align: center;
+    padding-top: 0.5em;
+  }
+
+  .box-paragraph {
+    grid-column: 3 /8;
+    grid-row: 2 / 3;
+    padding-top: 5em;
+    justify-self: start;
+    width: 100%;
+  }
+
+  .box-paragraph p {
+    text-align: justify;
+    font-size: 2vw;
+  }
+
+  .box-img {
+    justify-self: start;
+    grid-column: 3 / 8;
+    grid-row: 3 / 5;
+    width: 100%;
+    padding-top: 1em;
+  }
+
+  /* dicovery page part 2 */
+
+  .main-paragraph-1 {
+    grid-column: 2/9;
+    grid-row: 5/6;
+    padding-top: 0.8em;
+  }
+
+  .main-paragraph-1 p {
+    text-align: justify;
+    font-size: 2vw;
+  }
+
+  .main-right-img {
+    grid-column: 2/9;
+    grid-row: 6/8;
+    width: 100%;
+    padding-top: 0.5em;
+  }
+
+  .img-efect {
+    width: 100%;
+  }
+
+  .main-paragraph-2 {
+    grid-column: 2/9;
+    grid-row: 8/9;
+    padding-top: 0.1em;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+  }
+
+  .main-paragraph-2 p {
+    text-align: justify;
+    font-size: 2vw;
+  }
+
+  .main-left-img {
+    grid-column: 2/9;
+    grid-row: 9/11;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-left: 0.6em;
+  }
+
+  .main-paragraph-3 {
+    grid-column: 2/9;
+    grid-row: 11/12;
+    padding-top: 0.2em;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+    font-size: 1.6vw;
+  }
+
+  .main-paragraph-3 p {
+    text-align: justify;
+    font-size: 2vw;
+  }
+
+  .main-right-img-3 {
+    grid-column: 2/9;
+    grid-row: 12/14;
+    width: 100%;
+    padding-top: 1.5em;
+  }
+
+  #img-box {
+    width: 100%;
+  }
+}
+
+/* table */
+
+table {
+  margin: 10px auto;
+  border: thin solid var(--border);
+  box-shadow: 0 0 30px var(--shadow);
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: 0.85rem;
+}
+
+tr:first-child th {
+  background-color: var(--back);
+  color: var(--forelight);
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid var(--borderlight);
+}
+
+th {
+  background-color: var(--back2);
+}
+
+td {
+  text-align: center;
+}
+
+.text-column {
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zebra);
+}
+
+tfoot {
+  font-weight: bold;
+  color: var(--zebra);
+  background-color: var(--back);
+}
+
+h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+blockquote {
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+pre {
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+tr,
+th,
+td,
+caption {
+  font-family: var(--heading-font);
+  font-size: 1.5vw;
+}
+
+.thankyou-message {
+  display: block;
+  font-size: 1.2em;
+  border: solid 1px var(--secondary-color);
+  border-radius: 10px;
+  padding: 15px 10px 15px 5px;
+  color: var(--paragraph-color-on-white);
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--paragraph-background-color);
+  font-family: var(--heading-font);
+}
+
+.thankyou-message h3 {
+  display: block;
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 38px;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  font-family: var(--heading-font);
+  text-align: center;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  .thankyou-message h3 {
+    font-size: 1.2rem;
+    line-height: 38px;
+  }
+}
+
+.thankyou-message p {
+  padding-top: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  line-height: 0px;
+  text-align: left;
+}
+
+.thankyou-message p span {
+  padding-top: 1rem;
+  color: var(--paragraph-color-on-white);
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  font-family: var(--heading-font);
+}
