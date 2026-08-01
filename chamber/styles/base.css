@@ -1,30 +1,24 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-
 :root {
-  /* Paleta Institucional - Cámara de Comercio de Barranquilla */
-  --primary-color: #004c9e; /* Azul Institucional CCB (Header, títulos principales) */
-  --secondary-color: #f0f4f8; /* Gris/Azulado Muy Claro (Tarjetas, módulos y contenedores) */
-  --accent1-color: #3481fe; /* Azul Acción / Interactivo (Botones CTA, enlaces, hovers) */
-  --accent2-color: #e2e8f0; /* Gris Claro de Borde / Divisor */
-
-  /* Fuentes del proyecto */
+  
+  --primary-color: #004c9e; 
+  --secondary-color: #f0f4f8; 
+  --accent1-color: #3481fe;  
+  --accent2-color: #e2e8f0; 
   --heading-font: "Montserrat", sans-serif;
   --paragraph-font: "Inter", sans-serif;
 
-  /* Asignación funcional sobre fondos claros */
-  --headline-color-on-white: #004c9e; /* Titulares sobre fondo blanco/claro */
-  --headline-color-on-color: #ffffff; /* Titulares sobre botones o banners de color */
-  --paragraph-color-on-white: #1a1a1a; /* Texto oscuro sobre blanco (Gris Grafito) */
-  --paragraph-color-on-color: #ffffff; /* Texto sobre elementos con color acento */
-  --paragraph-background-color: #ffffff; /* Fondo general de la página (Blanco) */
 
-  /* Navegación al estilo camarabaq.org.co */
-  --nav-link-color: #004c9e; /* Enlaces azul institucional */
-  --nav-background-color: #ffffff; /* Barra superior limpia en blanco */
-  --nav-hover-link-color: #ffffff; /* Texto blanco al resaltar */
-  --nav-hover-background-color: #3482fe; /* Fondo azul brillante en hover */
+  --headline-color-on-white: #004c9e; 
+  --headline-color-on-color: #ffffff; 
+  --paragraph-color-on-white: #1a1a1a;
+  --paragraph-color-on-color: #ffffff; 
+  --paragraph-background-color: #ffffff; 
+
+  
+  --nav-link-color: #004c9e; 
+  --nav-background-color: #ffffff;
+  --nav-hover-link-color: #ffffff; 
+  --nav-hover-background-color: #3482fe; 
 
   --back: var(--primary-color);
   --back2: var(--secondary-color);
@@ -43,7 +37,7 @@ html {
 
 body {
   width: 100%;
-  max-width: 2000px; /* Ajusta según el diseño general */
+  max-width: 2000px; 
   margin: 0 auto;
   padding: 1em;
   box-sizing: border-box;
@@ -89,7 +83,6 @@ header h3 {
   font-weight: 400;
 }
 
-/* Oculta un elemento de forma accesible para lectores de pantalla y validadores */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -102,7 +95,6 @@ header h3 {
   border: 0;
 }
 
-/* Corrección de contraste en el Banner */
 #banner {
   background-color: var(--primary-color);
   color: var(--paragraph-background-color);
@@ -158,18 +150,18 @@ h1 {
   text-align: center;
   color: darkblue;
   padding-top: 0.5em;
-  font-size: 2rem; /* Cambiado de 2.5vw a un tamaño fijo/escalable ideal */
+  font-size: 2rem; 
   margin-bottom: 0.2rem;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
-  line-height: 2.4px;
+  font-weight: auto;
+  line-height: 1.2;
 }
 
 h2 {
   text-align: center;
   color: var(--headline-color-on-color);
-  font-size: 1.25rem; /* Cambiado de 2vw a 1.25rem */
+  font-size: 1.25rem; 
   font-weight: 400;
 }
 
@@ -186,7 +178,6 @@ h2 {
 
 /* this is the top nav css control */
 
-/* --- CONTROL DE LA NAVEGACIÓN --- */
 
 .topnav {
   overflow: hidden;
@@ -198,7 +189,7 @@ h2 {
   padding-top: 31px;
 }
 
-/* Estilos para los enlaces principales */
+
 .topnav a {
   float: left;
   display: block;
@@ -215,16 +206,15 @@ button.icon:hover {
   color: var(--nav-hover-link-color);
 }
 
-/* Estilo para el enlace activo */
-/* Estilo suave con fondo claro y borde inferior */
+
 .topnav a.active {
-  background-color: var(--secondary-color); /* Gris/Azulado muy claro */
+  background-color: var(--secondary-color); 
   color: var(--primary-color);
   font-weight: bold;
   border-bottom: 3px solid var(--accent1-color);
 }
 
-/* Ocultar el botón de menú por defecto en pantallas grandes */
+
 .topnav .icon {
   display: none;
   background: transparent;
@@ -260,20 +250,19 @@ p {
   line-height: 20px;
 }
 
-/* --- VISTA MÓVIL (Menú Hamburguesa) --- */
+
 @media screen and (max-width: 47.9375em) {
-  /* Ocultar todos los enlaces excepto el primero (Home) */
   .topnav a:not(:first-child) {
     display: none;
   }
 
-  /* Mostrar el botón de hamburguesa (usando .icon o button.icon) */
+ 
   .topnav .icon {
     float: right;
     display: block;
   }
 
-  /* Estado desplegado del menú cuando tiene la clase .responsive */
+  
   .topnav.responsive {
     position: relative;
   }
@@ -290,12 +279,12 @@ p {
     text-align: left;
   }
 
-  /* Hover específico en el menú móvil */
+ 
   .topnav.responsive a:hover {
     background-color: var(
       --nav-hover-background-color
-    ); /* Fondo azul al pasar el cursor */
-    color: var(--nav-hover-link-color); /* Texto blanco */
+    ); 
+    color: var(--nav-hover-link-color); 
   }
 }
 
@@ -332,19 +321,18 @@ p {
   width: 100%;
 }
 
-/* Fuerza a la imagen a llenar el espacio asignado por el Grid */
+
 .hero-image img,
 .landscape {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Mantiene la proporción de la foto sin deformarla */
+  object-fit: cover; 
   display: block;
   border-radius: 0.5em;
   margin-top: 18px;
 }
 
-/* El botón ahora es 100% responsivo */
-/* El botón responsivo se mantiene con porcentajes */
+
 .hero-image .button {
   background-color: var(--paragraph-color-on-color);
   color: var(--primary-color);
@@ -366,7 +354,7 @@ p {
   max-width: 100%;
 }
 
-/* La tarjeta contenedora única */
+
 .forecast-main-card {
   background-color: #63caf5d1;
   border-radius: 12px;
@@ -396,10 +384,10 @@ p {
   color: var(--paragraph-color-on-white);
 }
 
-/* Contenedor interno que agrupa los 5 días */
+
 .forecast-days-container {
   display: flex;
-  flex-direction: column; /* Cambia a 'row' si los prefieres alineados horizontalmente */
+  flex-direction: column; 
   gap: 12px;
   color: var(--paragraph-color-on-white);
   font-size: 30px;
@@ -417,7 +405,7 @@ p {
 
 
 .forecast-day-item:last-child {
-  border-bottom: none; /* Quita la línea divisoria al último elemento */
+  border-bottom: none;
 }
 
 .forecast-mini-icon {
@@ -468,7 +456,7 @@ p {
   text-align: center;
 }
 
-/* --- FORMULARIO DE CONTACTO --- */
+
 
 /* join us css */
 #joinForm {
@@ -693,30 +681,30 @@ footer p {
 }
 
 .contact address p {
-  margin: 0; /* Elimina la separación superior e inferior entre los párrafos */
-  line-height: 1.4; /* Ajusta la altura de línea para un interlineado cómodo */
+  margin: 0; 
+  line-height: 1.4; 
 }
 
 .contact address {
-  font-style: normal; /* Opcional: quita la cursiva predeterminada del elemento address */
-  margin-top: 5px; /* Un pequeño espacio opcional respecto al h2 */
+  font-style: normal; 
+  margin-top: 5px; 
 }
 
-/* Control global para los iconos de redes sociales */
+
 .social-links {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px; /* Espaciado limpio entre iconos */
+  gap: 15px; 
   margin: 10px 0;
   padding-top: 95px;
 }
 
 .social-links a {
   display: inline-block;
-  width: 32px; /* Tamaño ideal para producción */
+  width: 32px; 
   height: 32px;
 }
 
@@ -829,7 +817,7 @@ footer p {
     height: 70px;
   }
 
-  /* News Relase */
+  /* News Release */
   .news-release {
     order: 5;
     height: 30%;
@@ -911,29 +899,29 @@ footer p {
 
   .contact {
     grid-column: 1 / 2;
-    grid-row: 3 / 4; /* Cambiado de 2/3 a 3/4 */
+    grid-row: 3 / 4; 
     text-align: center;
     font-size: 0.5em;
     padding-top: 0em;
   }
 
   .contact h1 {
-    font-size: 1.2rem; /* Título del footer */
+    font-size: 1.2rem;
     color: var(--headline-color-on-color);
   }
 
   .contact h2 {
-    font-size: 0.95rem; /* Direcciones */
+    font-size: 0.95rem; 
     color: var(--accent2-color);
     margin: 4px 0;
   }
 
   .info-contact {
     grid-column: 1 / 2;
-    grid-row: 4 / 5; /* Cambiado de 3/3 a 4/5 */
+    grid-row: 4 / 5; 
     font-family: var(
       --paragraph-font
-    ); /* Asegurar que use la variable correcta */
+    ); 
     text-align: center;
     font-size: 1.1em;
     width: 96%;
@@ -962,7 +950,7 @@ footer p {
 
   .social-links a {
     display: inline-block;
-    width: 44px; /* Tamaño adecuado para móviles */
+    width: 44px; 
     height: 44px;
     background-color: var(--paragraph-color-on-color);
     border-radius: 50%;

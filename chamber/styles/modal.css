@@ -21,9 +21,9 @@
 
 .button-container {
   display: flex;
-  justify-content: center; /* Centra el botón horizontalmente */
-  align-items: center;     /* Centra verticalmente si hay una altura definida */
-  margin: 1.5rem 0;        /* Añade espacio arriba y abajo */
+  justify-content: center;
+  align-items: center;  
+  margin: 1.5rem 0;     
 }
 
 /* General button styles */
@@ -53,7 +53,6 @@ dialog[open] {
   border: 1px solid rgb(0 0 0 / 0.1);
 }
 
-/* The :modal pseudo-class is not yet fully supported across all browsers and may cause errors in some environments. dialog[open] targets all dialog elements ... */
 
 code {
   color: forestgreen;
@@ -61,7 +60,6 @@ code {
 
 /* MEDAL MEMBERSHIP */
 
-/* Contenedor principal horizontal */
 .membership-container {
   display: flex;
   flex-direction: row;
@@ -70,9 +68,9 @@ code {
   align-items: center;
 }
 
-/* Estilo base de la medalla */
+
 .medal {
-  position: relative; /* Indispensable para centrar el <p> y el ::after */
+  position: relative; 
   width: 70px;
   height: 70px;
   border: 5px solid transparent;
@@ -81,22 +79,22 @@ code {
   transition: transform 1.2s ease-in-out;
 }
 
-/* CENTRADO PERFECTO DEL PÁRRAFO <p> */
+
 .medal p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Lo ubica en el centro exacto */
+  transform: translate(-50%, -50%); 
   margin: 0;
   font-weight: bold;
   font-family: sans-serif;
   font-size: 1rem;
   color: #333;
-  pointer-events: none; /* Previene interferencias con el mouse */
+  pointer-events: none; 
   transition: color 0.5s ease-in-out;
 }
 
-/* Estilo del icono que aparece al hacer hover (::after) */
+
 .medal::after {
   position: absolute;
   top: 50%;
@@ -106,7 +104,7 @@ code {
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* --- ESTILOS DE CADA MEMBRESÍA --- */
+
 .medal.np {
   border-color: #6c757d transparent #6c757d transparent;
   box-shadow: 0 0 1rem rgba(108, 117, 125, 0.4);
@@ -139,19 +137,16 @@ code {
   content: "🥇";
 }
 
-/* --- EFECTOS HOVER --- */
-
-/* La medalla gira */
 .medal:hover {
   transform: rotate(360deg);
 }
 
-/* El icono (::after) crece desde el centro */
+
 .medal:hover::after {
   transform: translate(-50%, -50%) scale(1.4);
 }
 
-/* El texto <p> se vuelve transparente */
+
 .medal:hover p {
   color: transparent;
 }

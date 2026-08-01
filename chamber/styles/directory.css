@@ -26,7 +26,6 @@ section {
   align-items: center;
 }
 
-/* Forzar centrado específico en títulos, párrafos y enlaces */
 section h3,
 section p,
 section a {
@@ -45,14 +44,14 @@ section a {
   flex-direction: column;
 }
 
-/* Configuración por defecto de la lista (Móvil / Pantallas pequeñas) */
+
 .list section {
   display: flex;
-  flex-direction: column; /* Organiza en vertical para pantallas pequeñas */
+  flex-direction: column; 
   align-items: flex-start;
   justify-content: center;
   padding: 1rem;
-  width: 100%; /* Asegura que ocupe todo el ancho sin salirse */
+  width: 100%; 
   box-sizing: border-box;
 }
 
@@ -84,7 +83,7 @@ section a {
 
 section img {
   height: 75px;
-  max-width: 100%; /* Images are jerks - Seattle*/
+  max-width: 100%; 
 }
 
 @media (min-width: 900px) {
@@ -113,11 +112,11 @@ section img {
   }
 }
 
-/* Para pantallas medianas y grandes (tabletas y escritorio) */
+
 @media (min-width: 48em) {
   .list section {
     display: grid;
-    grid-template-columns: 2fr 2fr 1.5fr 1fr 2fr; /* Ajusta las columnas según tus datos */
+    grid-template-columns: 2fr 2fr 1.5fr 1fr 2fr; 
     align-items: center;
     gap: 10px;
   }
