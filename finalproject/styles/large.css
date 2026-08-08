@@ -1,0 +1,178 @@
+/* ==========================================
+   GloryBeauty Palace
+   Desktop Styles
+   WDD 231 Final Project
+========================================== */
+
+@media only screen and (min-width: 768px) {
+
+    /* =========================
+       Header
+    ========================= */
+
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:1rem 3rem;
+    }
+
+    .logo{
+        flex:1;
+    }
+
+    #menuButton{
+        display:none;
+    }
+
+    #navigation{
+        display:block !important;
+    }
+
+    #navigation ul{
+        display:flex;
+        flex-direction:row;
+        gap:1rem;
+        margin:0;
+    }
+
+    #navigation li{
+        border:none;
+    }
+
+    #navigation a{
+        border-radius:8px;
+        padding:.75rem 1.25rem;
+    }
+
+    /* =========================
+       Hero
+    ========================= */
+
+    .hero{
+        display:grid;
+        grid-template-columns:2fr 1fr;
+        align-items:center;
+    }
+
+    .hero img{
+        height:550px;
+        object-fit:cover;
+    }
+
+    .hero-content{
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        padding:3rem;
+    }
+
+    .hero-content h2{
+        font-size:2.8rem;
+    }
+
+    .hero-content p{
+        font-size:1.1rem;
+    }
+
+    /* =========================
+       Benefits
+    ========================= */
+
+    .benefit-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    /* =========================
+       Featured Products
+    ========================= */
+
+    #featuredProducts{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    /* =========================
+       Reviews
+    ========================= */
+
+    .review-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    /* =========================
+       Shop Layout
+    ========================= */
+
+    .shop-layout{
+        grid-template-columns:260px 1fr;
+        align-items:start;
+    }
+
+    .sidebar{
+        position:sticky;
+        top:120px;
+    }
+
+    /* =========================
+       Product Grid
+    ========================= */
+
+    #productContainer{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .product-card img{
+        height:240px;
+    }
+
+    /* =========================
+       Contact Page
+    ========================= */
+
+    .contact-layout{
+        grid-template-columns:1fr 2fr;
+        align-items:start;
+    }
+
+    /* =========================
+       Footer
+    ========================= */
+
+    footer{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        align-items:center;
+        gap:2rem;
+        text-align:left;
+    }
+
+    .footer-links{
+        text-align:center;
+    }
+
+}
+
+/* ==========================================
+   Large Desktop (1200px+)
+========================================== */
+
+@media only screen and (min-width:1200px){
+
+    main{
+        max-width:1200px;
+    }
+
+    .hero-content h2{
+        font-size:3.2rem;
+    }
+
+    .hero-content p{
+        font-size:1.2rem;
+    }
+
+    .product-card img{
+        height:260px;
+    }
+
+}

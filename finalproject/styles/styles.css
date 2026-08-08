@@ -1,0 +1,886 @@
+/* ==========================================
+   GloryBeauty Palace
+   WDD 231 Final Project
+   Author: Obinna Glory Chinaza N
+========================================== */
+
+/* ---------- CSS Variables ---------- */
+
+:root{
+    --primary:#B76E79;
+    --secondary:#FFF5E1;
+    --dark:#333333;
+    --light:#ffffff;
+    --gray:#777777;
+    --border:#e6d5c8;
+    --shadow:0 4px 10px rgba(0,0,0,.12);
+    --radius:10px;
+    --transition:.3s ease;
+}
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--secondary);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+/* ---------- Images ---------- */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ---------- Links ---------- */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ---------- Lists ---------- */
+
+ul{
+    list-style:none;
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3,
+h4{
+    color:var(--primary);
+    margin-bottom:.75rem;
+}
+
+p{
+    margin-bottom:1rem;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    padding:1rem;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.logo img{
+
+    border-radius:50%;
+
+}
+
+.logo h1{
+
+    font-size:1.5rem;
+
+}
+
+.logo p{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+}
+
+/* ==========================================
+   Navigation
+========================================== */
+
+#menuButton{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    font-size:1.6rem;
+
+    padding:.6rem;
+
+    cursor:pointer;
+
+    border-radius:5px;
+
+    margin-top:1rem;
+
+}
+
+#navigation{
+
+    display:none;
+
+}
+
+#navigation.open{
+
+    display:block;
+
+}
+
+#navigation ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-top:1rem;
+
+}
+
+#navigation li{
+
+    border-bottom:1px solid #eee;
+
+}
+
+#navigation a{
+
+    display:block;
+
+    padding:.9rem;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+#navigation a:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.active{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main{
+
+    width:min(1100px,95%);
+
+    margin:auto;
+
+    padding:2rem 0;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:var(--radius);
+
+    margin-bottom:3rem;
+
+}
+
+.hero img{
+
+    width:100%;
+
+    border-radius:var(--radius);
+
+}
+
+.hero-content{
+
+    background:rgba(183,110,121,.82);
+
+    color:white;
+
+    padding:2rem;
+
+}
+
+.hero-content h2{
+
+    color:white;
+
+    font-size:2rem;
+
+}
+
+.hero-content p{
+
+    margin:1rem 0;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.button{
+
+    display:inline-block;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:.9rem 1.5rem;
+
+    border-radius:8px;
+
+    transition:var(--transition);
+
+    font-weight:bold;
+
+}
+
+.button:hover{
+
+    background:#9d5d67;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about{
+
+    background:white;
+
+    padding:2rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:2rem;
+
+}
+
+/* ==========================================
+   BENEFITS
+========================================== */
+
+.benefit-grid{
+
+    display:grid;
+
+    gap:1.5rem;
+
+    margin-top:1.5rem;
+
+}
+
+.benefit-grid article{
+
+    background:white;
+
+    padding:1.5rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.benefit-grid article:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================================
+   FEATURED PRODUCTS
+========================================== */
+
+#featuredProducts{
+
+    display:grid;
+
+    gap:1.5rem;
+
+    margin-top:2rem;
+
+}
+
+.product-card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.product-info{
+
+    padding:1rem;
+
+}
+
+.product-info h3{
+
+    margin-bottom:.5rem;
+
+}
+
+.price{
+
+    color:var(--primary);
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    margin-bottom:.8rem;
+
+}
+
+/* ==========================================
+   REVIEWS
+========================================== */
+
+.review-grid{
+
+    display:grid;
+
+    gap:1.5rem;
+
+    margin-top:2rem;
+
+}
+
+.review-grid article{
+
+    background:white;
+
+    padding:1.5rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    border-left:5px solid var(--primary);
+
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.cta{
+
+    text-align:center;
+
+    background:white;
+
+    padding:2rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    margin:3rem 0;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:var(--primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:2rem 1rem;
+
+    margin-top:3rem;
+
+}
+
+footer h3{
+
+    color:white;
+
+}
+
+.footer-links{
+
+    margin:1rem 0;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    margin:0 .5rem;
+
+}
+
+.footer-links a:hover{
+
+    text-decoration:underline;
+
+}
+
+#lastModified{
+
+    margin-top:1rem;
+
+    font-size:.9rem;
+
+}
+
+/* ==========================================
+   Utilities
+========================================== */
+
+section{
+
+    margin-bottom:3rem;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+/* ==========================================
+   SHOP PAGE
+========================================== */
+
+.page-banner{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.page-banner h2{
+    font-size:2rem;
+}
+
+.shop-layout{
+    display:grid;
+    gap:2rem;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+    background:#fff;
+    padding:1.5rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.sidebar h3{
+    margin-bottom:1rem;
+}
+
+.sidebar label{
+    display:block;
+    margin-bottom:.5rem;
+    font-weight:600;
+}
+
+.sidebar select{
+    width:100%;
+    padding:.8rem;
+    border:1px solid var(--border);
+    border-radius:6px;
+    margin-bottom:1rem;
+    font-family:inherit;
+}
+
+.sidebar button{
+    width:100%;
+    padding:.8rem;
+    border:none;
+    border-radius:6px;
+    background:var(--primary);
+    color:#fff;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.sidebar button:hover{
+    background:#9d5d67;
+}
+
+/* ==========================================
+   PRODUCTS
+========================================== */
+
+.products-section h2{
+    margin-bottom:.5rem;
+}
+
+#productContainer{
+    display:grid;
+    gap:1.5rem;
+    margin-top:2rem;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.product-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:1rem;
+}
+
+.product-info p{
+    margin:.5rem 0;
+}
+
+.category{
+    display:inline-block;
+    background:var(--secondary);
+    color:var(--primary);
+    padding:.3rem .8rem;
+    border-radius:20px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.price{
+    color:var(--primary);
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+.card-buttons{
+    display:flex;
+    gap:.7rem;
+    margin-top:1rem;
+}
+
+.card-buttons button{
+    flex:1;
+    border:none;
+    padding:.7rem;
+    cursor:pointer;
+    border-radius:6px;
+    transition:var(--transition);
+    font-family:inherit;
+}
+
+.details-btn{
+    background:var(--primary);
+    color:#fff;
+}
+
+.favorite-btn{
+    background:#eee;
+}
+
+.favorite-btn:hover{
+    background:#ddd;
+}
+
+.details-btn:hover{
+    background:#9d5d67;
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+dialog{
+    width:min(500px,90%);
+    border:none;
+    border-radius:12px;
+    padding:2rem;
+    box-shadow:var(--shadow);
+}
+
+dialog::backdrop{
+    background:rgba(0,0,0,.6);
+}
+
+#closeModal{
+    float:right;
+    background:none;
+    border:none;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+
+#modalContent img{
+    width:100%;
+    border-radius:10px;
+    margin:1rem 0;
+}
+
+#modalContent h2{
+    margin-top:1rem;
+}
+
+/* ==========================================
+   CONTACT PAGE
+========================================== */
+
+.contact-layout{
+    display:grid;
+    gap:2rem;
+}
+
+.contact-info{
+    background:#fff;
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.contact-form{
+    background:#fff;
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+form{
+    display:grid;
+    gap:1rem;
+}
+
+label{
+    font-weight:600;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:.9rem;
+    border:1px solid var(--border);
+    border-radius:6px;
+    font-family:inherit;
+    font-size:1rem;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:3px solid rgba(183,110,121,.25);
+    border-color:var(--primary);
+}
+
+input[type="submit"]{
+    background:var(--primary);
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:var(--transition);
+    font-weight:600;
+}
+
+input[type="submit"]:hover{
+    background:#9d5d67;
+}
+
+/* ==========================================
+   THANK YOU PAGE
+========================================== */
+
+.thankyou{
+    text-align:center;
+}
+
+.submission-details{
+    background:#fff;
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    margin:2rem auto;
+    max-width:700px;
+    text-align:left;
+}
+
+.submission-details p{
+    padding:.5rem 0;
+    border-bottom:1px solid #eee;
+}
+
+/* ==========================================
+   ATTRIBUTIONS
+========================================== */
+
+.attributions{
+    background:#fff;
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.attributions ul{
+    list-style:disc;
+    margin-left:2rem;
+    margin-bottom:2rem;
+}
+
+.attributions a{
+    color:var(--primary);
+}
+
+.attributions a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus{
+    outline:3px solid var(--primary);
+    outline-offset:3px;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+.product-card,
+.review-grid article,
+.benefit-grid article{
+    transition:transform .3s ease,
+               box-shadow .3s ease;
+}
+
+.product-card:hover,
+.review-grid article:hover,
+.benefit-grid article:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   LOADING MESSAGE
+========================================== */
+
+.loading{
+    text-align:center;
+    font-size:1.2rem;
+    color:var(--primary);
+    padding:3rem;
+}
+
+/* ==========================================
+   ERROR MESSAGE
+========================================== */
+
+.error{
+    background:#ffe6e6;
+    color:#b00020;
+    padding:1rem;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+}
